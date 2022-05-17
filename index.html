@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Pokedex</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tx-collors.css" rel="stylesheet">
+    <link href="css/bg-collors.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<nav class="navbar bg-vermelho ">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-white">PokeDex</span>
+    </div>
+</nav>
+
+<div class="container mt-2">
+
+    <div class="row">
+
+        <div class="col-2">
+            <a href="#" class="btn bg-vermelho text-white" style="border-radius:25px" onclick="irParaPokemonAnterior()"> < </a>
+        </div>
+
+        <div class="col-2 text-end">
+            <a href="#" class="btn bg-vermelho text-white" style="border-radius:25px" onclick="irParaPokemonAnterior()"> > </a>
+        </div>
+
+        <div class="col">
+            <input class="form-control me-2" type="search" placeholder="Digite um nome de pokemon" aria-label="Search">
+        </div>
+
+    </div>
+
+<div class="row mt-2">
+
+    <div class="col-md-4 ">
+
+        <div class="card" style="width:100%;border-radius:25px" >
+            <h5 class="card-title text-center mt-1 " id="nomePokemon"></h5>
+            <img src="#" class="card-img-top bg-cinza-claro" alt="..." id="imagemPokemon">
+            <div class="card-body">
+                <p class="card-text"></p>
+                <a  class="btn bg-verde text-white" style="border-radius:25px" id="tipo1Pokemon"></a>
+                <a  class="btn bg-roxo text-white" style="border-radius:25px" id="tipo2Pokemon"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-8">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Altura(M)</th>
+                <th scope="col">HP</th>
+                <th scope="col">Atk</th>
+                <th scope="col">DEF</th>
+                <th scope="col">Atk Especial</th>
+                <th scope="col">DEF Especial</th>
+                <th scope="col">Speec</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" id="pokemon"></th>
+                <td id="altura"></td>
+                <td id="hp"></td>
+                <td id="ataque"></td>
+                <td id="defesa"></td>
+                <td id="ataqueEspecial"></td>
+                <td id="defesaEspecial"></td>
+                <td id="speec"></td>
+
+
+            </tr>
+
+            </tbody>
+        </table></div>
+
+
+</div>
+
+
+
+
+</div>
+
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/requestpokemon.js"></script>
+
+
+
+
+</body>
+</html>
